@@ -36,7 +36,7 @@ public class OrdemItem {
 		return produto.getNome()
 				+ ", $"
 				+ String.format("%.2f", preco)
-				+ ", Quantity: "
+				+ ", Quantidade: "
 				+ quantidade
 				+ ", Subtotal: $"
 				+ String.format("%.2f", subTotal());

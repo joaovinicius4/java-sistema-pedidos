@@ -73,17 +73,17 @@ public class Ordem {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("Order moment: ");
+		sb.append("Ordem momento: ");
 		sb.append(sdf.format(momento) + "\n");
-		sb.append("Order status: ");
+		sb.append("Ordem status: ");
 		sb.append(status + "\n");
-		sb.append("Client: ");
+		sb.append("Cliente: ");
 		sb.append(cliente + "\n");
-		sb.append("Order items:\n");
+		sb.append("Ordem itens:\n");
 		for (OrdemItem item : itens) {
 			sb.append(item + "\n");
 		}
-		sb.append("Total price: $");
+		sb.append("Preço Total: $");
 		sb.append(String.format("%.2f", total()));
 		return sb.toString();
 	}
